@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../styles/Theme'
 
 type BaseButtonPropsType = {
 	text: string
@@ -13,5 +14,6 @@ const StyledBaseButton = styled.a`
 	padding: 12px 40px;
 	border-radius: 8px;
 	border-style: none;
-	background: #d3f85a;
+	background: ${theme.colors.secondary};
+	color: ${theme.colors.btnText};
 `

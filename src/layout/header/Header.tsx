@@ -3,20 +3,23 @@ import styled from 'styled-components'
 import { Logo } from '../../components/logo/Logo'
 import { Menu } from '../../components/menu/Menu'
 import { BaseButton } from '../../components/buttons/BaseButton'
+import { Container } from '../../components/Container'
+import { FlexContainer } from '../../components/FlexContainer'
 
 export const Header = () => {
 	return (
 		<StyledHeader>
-			<Logo />
-			<Menu />
-			<BaseButton text='Contact'/>
+			<Container>
+				<FlexContainer justify='space-between' align='center'>
+					<Logo />
+					<Menu />
+					<BaseButton text='Contact' />
+				</FlexContainer>
+			</Container>
 		</StyledHeader>
 	)
 }
 
 const StyledHeader = styled.header`
-	background-color: #edb3b3;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	padding: 28px 0;
 `

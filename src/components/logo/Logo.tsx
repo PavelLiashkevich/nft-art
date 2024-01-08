@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icon } from '../icon/Icon'
 import styled from 'styled-components'
+import { theme } from '../../styles/Theme'
 
 export const Logo = () => {
 	return (
@@ -18,10 +19,11 @@ const StyledLink = styled.a`
 `
 
 const StyledText = styled.div`
-	color: #fff;
+	color: ${theme.colors.primary};
+	font-family: 'Loro';
 	font-size: 32px;
-	font-style: normal;
 	font-weight: 500;
+	margin-top: 10px;
 	span {
 		color: #d3f85a;
 	}
