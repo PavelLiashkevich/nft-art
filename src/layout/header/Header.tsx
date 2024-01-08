@@ -6,13 +6,15 @@ import { BaseButton } from '../../components/buttons/BaseButton'
 import { Container } from '../../components/Container'
 import { FlexContainer } from '../../components/FlexContainer'
 
+const items = ['Marketplace', 'Artists', 'Community', 'Collections']
+
 export const Header = () => {
 	return (
 		<StyledHeader>
 			<Container>
 				<FlexContainer justify='space-between' align='center'>
 					<Logo />
-					<Menu />
+					<Menu menuItems={items}/>
 					<BaseButton text='Contact' />
 				</FlexContainer>
 			</Container>

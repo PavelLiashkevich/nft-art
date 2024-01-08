@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../styles/Theme'
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const FooterMenu = (props: { menuItems: Array<string> }) => {
 	return (
 		<StyledMenu>
 			<ul>
@@ -20,13 +20,13 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 
 const StyledMenu = styled.nav`
 	ul {
-		display: flex;
-		gap: 40px;
+		gap: 8px;
 		li > a {
-			color: ${theme.colors.disable};
+			color: ${theme.colors.primary};
 		}
 	}
 `
+
 
 const ListItem = styled.li``
 

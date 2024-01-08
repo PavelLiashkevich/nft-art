@@ -4,6 +4,12 @@ import { FlexContainer } from '../../components/FlexContainer'
 import { Icon } from '../../components/icon/Icon'
 import { Logo } from '../../components/logo/Logo'
 import { StyledDescription } from '../../components/Description'
+import { FooterMenu } from './FooterMenu'
+
+const exploreItems = ['Art Sign In', 'Collectibles', 'Domain Name', 'Utility']
+const statisticItems = ['Ranking', 'Collectibles', 'Activity']
+const companyItems = ['About Us', 'Career', 'Support', 'Partners']
+const resourcesItems = ['Help Center', 'Platform Status', 'Blog']
 
 export const Footer = () => {
 	return (
@@ -42,65 +48,19 @@ export const Footer = () => {
 					<OtherLinks>
 						<LinksColumn>
 							<ListName>Explore</ListName>
-							<FooterList>
-								<FooterItem>
-									<FooterLink>Art Sign In</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Collectibles</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Domain Name</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Utility</FooterLink>
-								</FooterItem>
-							</FooterList>
+							<FooterMenu menuItems={exploreItems} />
 						</LinksColumn>
 						<LinksColumn>
 							<ListName>Statistic</ListName>
-							<FooterList>
-								<FooterItem>
-									<FooterLink>Ranking</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Collectibles</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Activity</FooterLink>
-								</FooterItem>
-							</FooterList>
+							<FooterMenu menuItems={statisticItems} />
 						</LinksColumn>
 						<LinksColumn>
 							<ListName>Company</ListName>
-							<FooterList>
-								<FooterItem>
-									<FooterLink>About Us</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Career</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Support</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Partners</FooterLink>
-								</FooterItem>
-							</FooterList>
+							<FooterMenu menuItems={companyItems} />
 						</LinksColumn>
 						<LinksColumn>
 							<ListName>Resources</ListName>
-							<FooterList>
-								<FooterItem>
-									<FooterLink>Help Center</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Platform Status</FooterLink>
-								</FooterItem>
-								<FooterItem>
-									<FooterLink>Blog</FooterLink>
-								</FooterItem>
-							</FooterList>
+							<FooterMenu menuItems={resourcesItems} />
 						</LinksColumn>
 					</OtherLinks>
 				</FlexContainer>
@@ -158,17 +118,6 @@ const ListName = styled.h4`
 	font-style: normal;
 	font-weight: 700;
 `
-
-const FooterList = styled.ul``
-
-const FooterItem = styled.li`
-	color: #ffffff;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-`
-
-const FooterLink = styled.a``
 
 const Copyright = styled.span`
 	color: #fffffd;
