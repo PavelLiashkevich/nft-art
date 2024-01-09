@@ -13,6 +13,7 @@ export const BaseButton = (props: BaseButtonPropsType) => {
 const StyledBaseButton = styled.a`
 	padding: 12px 40px;
 	border-radius: 8px;
+	font-weight: 700;
 	border-style: none;
 	background: ${theme.colors.secondary};
 	color: ${theme.colors.btnText};

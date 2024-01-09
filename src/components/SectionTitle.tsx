@@ -1,12 +1,18 @@
 import styled from 'styled-components'
+import { theme } from '../styles/Theme'
 
-export const SectionTitle = styled.h2`
-	color: #fffffd;
+type SectionTitlePropsType = {
+	maxWidth?: string
+}
+
+export const SectionTitle = styled.h2<SectionTitlePropsType>`
+	font-family: 'Lora';
+	color: ${theme.colors.primary};
 	font-size: 48px;
-	font-style: normal;
 	font-weight: 500;
+	max-width: ${props => props.maxWidth};
 
 	span {
-		color: #d3f85a;
+		color: ${theme.colors.secondary};
 	}
 `

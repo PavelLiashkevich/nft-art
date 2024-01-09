@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import { FlexContainer } from '../../../../components/FlexContainer'
 import { Icon } from '../../../../components/icon/Icon'
-import { CardButton } from '../../../../components/buttons/CardButton'
+import { CardBtn } from './CardBtn'
+import { theme } from '../../../../styles/Theme'
 
 type CardPropsType = {
 	title: string
@@ -14,7 +16,7 @@ export const Card = (props: CardPropsType) => {
 	return (
 		<StyledCard>
 			<Image src={props.src}></Image>
-			<FlexContainer justify='space-between' align='center'>
+			<FlexContainer justify='space-between' marginBottom='16px'>
 				<Title>{props.title}</Title>
 				<Price>
 					<Icon iconId={'ethereumLogo'} />
@@ -25,13 +27,13 @@ export const Card = (props: CardPropsType) => {
 			<FlexContainer justify='space-between' align='center'>
 				<FlexContainer direction='column'>
 					<MiniTitle>Ending In</MiniTitle>
-					<FlexContainer>
+					<FlexContainer align='center'>
 						<Icon iconId={'clock'} />
 						<Time>03:24:56</Time>
 					</FlexContainer>
 				</FlexContainer>
 
-				<CardButton />
+				<CardBtn />
 			</FlexContainer>
 		</StyledCard>
 	)
@@ -52,8 +54,9 @@ const Image = styled.img`
 	width: 100%;
 	object-fit: cover;
 	object-position: 0 0;
-	height: 340px;
+	max-height: 340px;
 	border-radius: 16px;
+	margin-bottom: 24px;
 `
 
 const Title = styled.h4`
@@ -65,15 +68,23 @@ const Title = styled.h4`
 	line-height: 120%;
 `
 
-const Price = styled.div``
+const Price = styled.div`
+	align-items: center;
+	display: flex;
+`
 
-const PriceEth = styled.span``
+const PriceEth = styled.span`
+	color: ${theme.colors.primary};
+	font-family: 'Inter';
+	font-size: 16px;
+	font-weight: 700;
+`
 
 const MiniTitle = styled.span`
 	color: #838382;
+	margin-bottom: 4px;
 	font-family: Inter;
 	font-size: 14px;
-	font-style: normal;
 	font-weight: 400;
 	line-height: 160%;
 `
@@ -81,8 +92,8 @@ const MiniTitle = styled.span`
 const Time = styled.span`
 	color: #fffffd;
 	font-family: Inter;
+	margin-left: 12px;
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 120%;
 `

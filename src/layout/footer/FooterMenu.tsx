@@ -18,16 +18,14 @@ export const FooterMenu = (props: { menuItems: Array<string> }) => {
 	)
 }
 
-const StyledMenu = styled.nav`
-	ul {
-		gap: 8px;
-		li > a {
-			color: ${theme.colors.primary};
-		}
-	}
+const StyledMenu = styled.nav``
+
+const ListItem = styled.li`
+:not(:last-child) {
+	margin-bottom: 8px;
+}
 `
 
-
-const ListItem = styled.li``
-
-const Link = styled.a``
+const Link = styled.a`
+	color: ${theme.colors.primary};
+`

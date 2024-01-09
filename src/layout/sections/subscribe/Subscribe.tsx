@@ -7,39 +7,47 @@ import { SubscribeButton } from '../../../components/buttons/SubscribeButton'
 
 import subscribeImg1 from '../../../assets/images/others/subscribeImg1.webp'
 import subscribeImg2 from '../../../assets/images/others/subscribeImg2.webp'
+import { FlexContainer } from '../../../components/FlexContainer'
+import { Container } from '../../../components/Container'
 
 export const Subscribe = () => {
 	return (
 		<StyledSubscribe>
-			<MainColumn>
-				<Photo src={subscribeImg1} />
-				<Photo src={subscribeImg2} />
-			</MainColumn>
-			<MainColumn>
-				<SectionTitle>
-					Subscribe And <span>get our Updates</span> Every Week
-				</SectionTitle>
-				<StyledDescription>
-					We have a blog related to NFT so we can share thoughts and routines on
-					our blog which is updated weekly
-				</StyledDescription>
-				<StyledInput type='email' placeholder='Enter your e-mail' />
-				<SubscribeButton text='Subscribe' type={'submit'} />
-			</MainColumn>
+			<Container>
+				<FlexContainer align='center' justify='space-between'>
+					<SubscribeColumn>
+						<Photo src={subscribeImg1} />
+						<Photo src={subscribeImg2} />
+					</SubscribeColumn>
+					<SubscribeColumnTwo>
+						<SectionTitle>
+							Subscribe And <span>get our Updates</span> Every Week
+						</SectionTitle>
+						<StyledDescription>
+							We have a blog related to NFT so we can share thoughts and
+							routines on our blog which is updated weekly
+						</StyledDescription>
+						<FormContainer>
+							<StyledInput type='email' placeholder='Enter your e-mail' />
+							<SubscribeButton text='Subscribe' type={'submit'} />
+						</FormContainer>
+					</SubscribeColumnTwo>
+				</FlexContainer>
+			</Container>
 		</StyledSubscribe>
 	)
 }
 
 const StyledSubscribe = styled.section`
-	min-height: 100vh;
-	background-color: #826969;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	padding: 92px 0;
 `
 
-const MainColumn = styled.div`
+const SubscribeColumn = styled.div`
 	max-width: 630px;
+`
+
+const SubscribeColumnTwo = styled.div`
+	max-width: 520px;
 `
 
 const Photo = styled.img`
@@ -50,12 +58,19 @@ const Photo = styled.img`
 	border-radius: 20px;
 `
 
+const FormContainer = styled.div`
+	display: flex;
+	position: relative;
+`
+
 const StyledInput = styled.input.attrs(props => ({
 	type: props.type || 'text',
 	placeholder: props.placeholder || 'NFT Art',
 }))`
+	width: 100%;
 	padding: 16px 24px;
 	border-radius: 8px;
+	border-style: none;
 	background: #131e3a;
 	color: rgba(255, 255, 253, 0.72);
 	font-size: 16px;

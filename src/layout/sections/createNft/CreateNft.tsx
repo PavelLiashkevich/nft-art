@@ -9,34 +9,38 @@ import { AdditionalButton } from '../../../components/buttons/AdditionalButton'
 
 import photoOne from '../../../assets/images/others/createNft1.webp'
 import photoTwo from '../../../assets/images/others/createNft2.webp'
+import { Container } from '../../../components/Container'
 
 export const CreateNft = () => {
 	return (
 		<StyledCreateNft>
-			<FlexContainer align={'center'} justify={'space-between'}>
-				<MainColumn>
-					<SectionTitle>Create And Sell Your <span>Best NFTs</span></SectionTitle>
-					<StyledDescription>
-						Start exploring the world of digital art and NFTs today and take
-						control of your digital assets with confidence!
-					</StyledDescription>
-					<div>
-						<BaseButton text={'Create Now'} />
-						<AdditionalButton text={'Learn More'} />
-					</div>
-				</MainColumn>
-				<MainColumn>
-					<Photo src={photoOne} />
-					<Photo src={photoTwo} />
-				</MainColumn>
-			</FlexContainer>
+			<Container>
+				<FlexContainer align={'center'} justify={'space-between'}>
+					<MainColumn>
+						<SectionTitle>
+							Create And Sell Your <span>Best NFTs</span>
+						</SectionTitle>
+						<StyledDescription>
+							Start exploring the world of digital art and NFTs today and take
+							control of your digital assets with confidence!
+						</StyledDescription>
+						<FlexContainer align='center'>
+							<BaseButton text={'Create Now'} />
+							<AdditionalButton text={'Learn More'} />
+						</FlexContainer>
+					</MainColumn>
+					<MainColumn>
+						<Photo src={photoOne} />
+						<Photo src={photoTwo} />
+					</MainColumn>
+				</FlexContainer>
+			</Container>
 		</StyledCreateNft>
 	)
 }
 
 const StyledCreateNft = styled.section`
-	min-height: 100vh;
-	background-color: #eca5a5;
+	padding: 92px 0;
 `
 
 const MainColumn = styled.div`

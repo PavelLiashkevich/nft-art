@@ -9,26 +9,28 @@ import { SectionTitle } from '../../../components/SectionTitle'
 import ImageCard1 from '../../../assets/images/others/image1.webp'
 import ImageCard2 from '../../../assets/images/others/image2.webp'
 import ImageCard3 from '../../../assets/images/others/image3.webp'
+import { Container } from '../../../components/Container'
 
 export const Works = () => {
 	return (
 		<StyledWorks>
-			<FlexContainer justify={'space-between'} align={'center'}>
-				<SectionTitle>
-					<span>Amazing</span> and Super Unique Art of This <span>Week</span>
-				</SectionTitle>
-				<BaseButton text={'See All'} />
-			</FlexContainer>
-			<FlexContainer justify='space-between'>
-				<Card src={ImageCard1} title={'Cyberpunk Cocomo'} price={490} />
-				<Card src={ImageCard2} title={'Charge, Qi tiao yu'} price={590} />
-				<Card src={ImageCard3} title={'Surgeon, Josh Rife'} price={390} />
-			</FlexContainer>
+			<Container>
+				<FlexContainer justify={'space-between'} align={'center'} marginBottom='64px'>
+					<SectionTitle maxWidth='550px'>
+						<span>Amazing</span> and Super Unique Art of This <span>Week</span>
+					</SectionTitle>
+					<BaseButton text={'See All'} />
+				</FlexContainer>
+				<FlexContainer justify='space-between'>
+					<Card src={ImageCard1} title={'Cyberpunk Cocomo'} price={490} />
+					<Card src={ImageCard2} title={'Charge, Qi tiao yu'} price={590} />
+					<Card src={ImageCard3} title={'Surgeon, Josh Rife'} price={390} />
+				</FlexContainer>
+			</Container>
 		</StyledWorks>
 	)
 }
 
 const StyledWorks = styled.section`
-	min-height: 100vh;
-	background-color: lightgray;
+	padding: 92px 0;
 `

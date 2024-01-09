@@ -10,7 +10,7 @@ export const Artists = () => {
 	return (
 		<StyledArtists>
 			<FlexContainer justify={'space-between'} align={'center'}>
-				<SectionTitle>
+				<SectionTitle maxWidth='307px'>
 					Popular <span>Artists</span> On This Week
 				</SectionTitle>
 				<BaseButton text={'See All'} />

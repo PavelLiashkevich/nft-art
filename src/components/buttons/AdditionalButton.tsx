@@ -17,4 +17,5 @@ const StyledAdditionalButton = styled.a`
 	line-height: 120%;
 	background-color: transparent;
 	border: none;
+	margin-left: 36px;
 `
