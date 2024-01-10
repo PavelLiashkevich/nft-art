@@ -16,7 +16,7 @@ export const Main = () => {
 		<StyledMain>
 			<Container>
 				<FlexContainer align={'center'} justify={'space-between'}>
-					<MainColumn>
+					<MainColumnInfo>
 						<SectionMainTitle>
 							Discover and Collect The Best NFTs <span>Digital Art.</span>
 						</SectionMainTitle>
@@ -50,11 +50,28 @@ export const Main = () => {
 								<span>Collection</span>
 							</StyledStatisticsColumn>
 						</FlexContainer>
-					</MainColumn>
-					<MainColumn>
+					</MainColumnInfo>
+					<MainColumnDesign>
 						<Photo src={photo} alt='Photo' />
 						<CardBid />
-					</MainColumn>
+						<StyledSvg viewBox='0 0 100 100' width='100' height='100'>
+							<defs>
+								<path
+									id='circle'
+									d='
+        M 50, 50
+        m -37, 0
+        a 37,37 0 1,1 74,0
+        a 37,37 0 1,1 -74,0'
+								/>
+							</defs>
+							<text fontSize='14'>
+								<textPath href='#circle'>
+									ArtworkoftheweekArtworkoftheweek
+								</textPath>
+							</text>
+						</StyledSvg>
+					</MainColumnDesign>
 				</FlexContainer>
 			</Container>
 		</StyledMain>
@@ -65,8 +82,13 @@ const StyledMain = styled.section`
 	padding: 92px 0;
 `
 
-const MainColumn = styled.div`
+const MainColumnInfo = styled.div`
 	max-width: 544px;
+`
+
+const MainColumnDesign = styled.div`
+	max-width: 575px;
+	position: relative;
 `
 
 const SectionMainTitle = styled.h1`
@@ -87,6 +109,7 @@ const Photo = styled.img`
 	border-radius: 24px;
 	object-fit: cover;
 	object-position: 0 0;
+	margin-right: 51px;
 `
 
 const StyledStatisticsColumn = styled.div`
@@ -115,4 +138,23 @@ const StyledStatisticsColumn = styled.div`
 		font-family: 'Inter';
 		font-size: 16px;
 	}
+`
+
+//const WrapperCard = styled.div`
+//	width: 100%;
+//	position: absolute;
+//	top: 468px;
+//	right: 0;
+//`
+
+const StyledSvg = styled.svg`
+	font-family: 'Lora';
+	fill: currentColor;
+	height: auto;
+	max-width: 172px;
+	transform-origin: center;
+	width: 100%;
+	position: absolute;
+	top: 223px;
+	left: 0;
 `

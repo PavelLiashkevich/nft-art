@@ -21,7 +21,7 @@ export const CardBid = () => {
 	)
 }
 
-const StyledCardBid = styled.div`
+export const StyledCardBid = styled.div`
 	padding: 20px;
 	border-radius: 16px;
 	border-top: 1px solid #d3f85a;
@@ -35,5 +35,5 @@ const InfoColumn = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 24px;
-	gap: 8px
+	gap: 8px;
 `
