@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { StyledDescription } from '../../../components/Description'
 import { SubscribeButton } from '../../../components/buttons/SubscribeButton'
+import { FlexContainer } from '../../../components/FlexContainer'
+import { Container } from '../../../components/Container'
 
 import subscribeImg1 from '../../../assets/images/others/subscribeImg1.webp'
 import subscribeImg2 from '../../../assets/images/others/subscribeImg2.webp'
-import { FlexContainer } from '../../../components/FlexContainer'
-import { Container } from '../../../components/Container'
 
 export const Subscribe = () => {
 	return (

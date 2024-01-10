@@ -6,10 +6,10 @@ import { SectionTitle } from '../../../components/SectionTitle'
 import { StyledDescription } from '../../../components/Description'
 import { BaseButton } from '../../../components/buttons/BaseButton'
 import { AdditionalButton } from '../../../components/buttons/AdditionalButton'
+import { Container } from '../../../components/Container'
 
 import photoOne from '../../../assets/images/others/createNft1.webp'
 import photoTwo from '../../../assets/images/others/createNft2.webp'
-import { Container } from '../../../components/Container'
 
 export const CreateNft = () => {
 	return (
@@ -48,7 +48,6 @@ const MainColumn = styled.div`
 `
 
 const Photo = styled.img`
-	height: 554px;
 	max-width: 410px;
 	object-fit: cover;
 	object-position: 0 0;

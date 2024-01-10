@@ -1,6 +1,7 @@
 import React from 'react'
-import { FlexContainer } from '../../components/FlexContainer'
 import styled from 'styled-components'
+
+import { FlexContainer } from '../../components/FlexContainer'
 
 export const Copyright = () => {
 	return (

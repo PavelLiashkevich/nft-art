@@ -22,7 +22,6 @@ const StyledText = styled.div`
 	color: ${theme.colors.primary};
 	font-family: 'Loro';
 	font-size: 32px;
-	font-weight: 500;
 	margin-top: 10px;
 	span {
 		color: #d3f85a;

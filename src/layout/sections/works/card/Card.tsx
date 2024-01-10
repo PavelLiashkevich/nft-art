@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { FlexContainer } from '../../../../components/FlexContainer'
 import { Icon } from '../../../../components/icon/Icon'
 import { CardBtn } from './CardBtn'
-import { theme } from '../../../../styles/Theme'
 
 type CardPropsType = {
 	title: string
@@ -61,10 +60,7 @@ const Image = styled.img`
 
 const Title = styled.h4`
 	color: #fffffd;
-	font-family: Inter;
 	font-size: 24px;
-	font-style: normal;
-	font-weight: 700;
 	line-height: 120%;
 `
 
@@ -74,8 +70,6 @@ const Price = styled.div`
 `
 
 const PriceEth = styled.span`
-	color: ${theme.colors.primary};
-	font-family: 'Inter';
 	font-size: 16px;
 	font-weight: 700;
 `
@@ -83,15 +77,12 @@ const PriceEth = styled.span`
 const MiniTitle = styled.span`
 	color: #838382;
 	margin-bottom: 4px;
-	font-family: Inter;
 	font-size: 14px;
-	font-weight: 400;
 	line-height: 160%;
 `
 
 const Time = styled.span`
 	color: #fffffd;
-	font-family: Inter;
 	margin-left: 12px;
 	font-size: 16px;
 	font-weight: 700;

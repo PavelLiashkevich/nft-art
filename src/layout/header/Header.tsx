@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import { Logo } from '../../components/logo/Logo'
 import { Menu } from '../../components/menu/Menu'
 import { BaseButton } from '../../components/buttons/BaseButton'
@@ -14,7 +15,7 @@ export const Header = () => {
 			<Container>
 				<FlexContainer justify='space-between' align='center'>
 					<Logo />
-					<Menu menuItems={items}/>
+					<Menu menuItems={items} />
 					<BaseButton text='Contact' />
 				</FlexContainer>
 			</Container>

@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import photo from '../../../assets/images/others/mainImage.webp'
-
 import { BaseButton } from '../../../components/buttons/BaseButton'
 import { FlexContainer } from '../../../components/FlexContainer'
 import { CardBid } from '../../../components/cardBid/CardBid'
@@ -10,6 +8,8 @@ import { AdditionalButton } from '../../../components/buttons/AdditionalButton'
 import { StyledDescription } from '../../../components/Description'
 import { theme } from '../../../styles/Theme'
 import { Container } from '../../../components/Container'
+
+import photo from '../../../assets/images/others/mainImage.webp'
 
 export const Main = () => {
 	return (
@@ -27,7 +27,7 @@ export const Main = () => {
 							confidence!
 						</StyledDescription>
 						<FlexContainer align='center' marginBottom='72px'>
-							<BaseButton text={'Explore Now'}/>
+							<BaseButton text={'Explore Now'} />
 							<AdditionalButton text={'Learn More'} />
 						</FlexContainer>
 						<FlexContainer justify={'space-between'}>
@@ -70,7 +70,6 @@ const MainColumn = styled.div`
 `
 
 const SectionMainTitle = styled.h1`
-	color: ${theme.colors.primary};
 	font-family: 'Lora';
 	font-size: 64px;
 	font-weight: 500;
@@ -113,7 +112,6 @@ const StyledStatisticsColumn = styled.div`
 	}
 
 	span {
-		color: ${theme.colors.primary};
 		font-family: 'Inter';
 		font-size: 16px;
 	}
