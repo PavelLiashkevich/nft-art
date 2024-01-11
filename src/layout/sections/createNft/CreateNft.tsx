@@ -16,7 +16,7 @@ export const CreateNft = () => {
 		<StyledCreateNft>
 			<Container>
 				<FlexContainer align={'center'} justify={'space-between'}>
-					<MainColumn>
+					<MainColumnInfo>
 						<SectionTitle>
 							Create And Sell Your <span>Best NFTs</span>
 						</SectionTitle>
@@ -28,28 +28,52 @@ export const CreateNft = () => {
 							<BaseButton text={'Create Now'} />
 							<AdditionalButton text={'Learn More'} />
 						</FlexContainer>
-					</MainColumn>
-					<MainColumn>
-						<Photo src={photoOne} />
-						<Photo src={photoTwo} />
-					</MainColumn>
+					</MainColumnInfo>
+					<MainColumnPhoto>
+						<CardPhotoOne>
+							<PhotoOne src={photoOne} />
+						</CardPhotoOne>
+						<CardPhotoTwo>
+							<PhotoTwo src={photoTwo} />
+						</CardPhotoTwo>
+					</MainColumnPhoto>
 				</FlexContainer>
 			</Container>
 		</StyledCreateNft>
 	)
 }
 
-const StyledCreateNft = styled.section`
-	padding: 92px 0;
-`
+const StyledCreateNft = styled.section``
 
-const MainColumn = styled.div`
+const MainColumnInfo = styled.div`
 	max-width: 426px;
 `
 
-const Photo = styled.img`
+const MainColumnPhoto = styled.div`
+	max-width: 740px;
+	display: flex;
+`
+
+const CardPhotoOne = styled.div`
 	max-width: 410px;
+`
+
+const CardPhotoTwo = styled.div`
+	max-width: 410px;
+`
+
+const PhotoOne = styled.img`
+	width: 100%;
+	max-height: 400px;
 	object-fit: cover;
 	object-position: 0 0;
+	border-radius: 24px;
+`
+
+const PhotoTwo = styled.img`
+	width: 100%;
+	max-height: 475px;
+	object-fit: cover;
+	object-position: 0 50%;
 	border-radius: 24px;
 `

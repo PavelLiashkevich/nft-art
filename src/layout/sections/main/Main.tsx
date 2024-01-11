@@ -78,9 +78,7 @@ export const Main = () => {
 	)
 }
 
-const StyledMain = styled.section`
-	padding: 92px 0;
-`
+const StyledMain = styled.section``
 
 const MainColumnInfo = styled.div`
 	max-width: 544px;

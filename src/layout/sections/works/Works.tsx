@@ -15,7 +15,11 @@ export const Works = () => {
 	return (
 		<StyledWorks>
 			<Container>
-				<FlexContainer justify={'space-between'} align={'center'} marginBottom='64px'>
+				<FlexContainer
+					justify={'space-between'}
+					align={'center'}
+					marginBottom='64px'
+				>
 					<SectionTitle maxWidth='550px'>
 						<span>Amazing</span> and Super Unique Art of This <span>Week</span>
 					</SectionTitle>
@@ -31,6 +35,4 @@ export const Works = () => {
 	)
 }
 
-const StyledWorks = styled.section`
-	padding: 92px 0;
-`
+const StyledWorks = styled.section``

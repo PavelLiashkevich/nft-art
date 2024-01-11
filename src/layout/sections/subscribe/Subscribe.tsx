@@ -38,9 +38,7 @@ export const Subscribe = () => {
 	)
 }
 
-const StyledSubscribe = styled.section`
-	padding: 92px 0;
-`
+const StyledSubscribe = styled.section``
 
 const SubscribeColumn = styled.div`
 	max-width: 630px;
