@@ -29,6 +29,10 @@ export const StyledCardBid = styled.div`
 	box-shadow: 0px 9px 50px 0px rgba(23, 36, 65, 0.04);
 	max-width: 304px;
 	color: #d3f85a;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 468px;
 `
 
 const InfoColumn = styled.div`

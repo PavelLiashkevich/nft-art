@@ -10,6 +10,7 @@ import { theme } from '../../../styles/Theme'
 import { Container } from '../../../components/Container'
 
 import photo from '../../../assets/images/others/mainImage.webp'
+import { Icon } from '../../../components/icon/Icon'
 
 export const Main = () => {
 	return (
@@ -71,6 +72,14 @@ export const Main = () => {
 								</textPath>
 							</text>
 						</StyledSvg>
+						<IconWrapper>
+							<Icon
+								iconId='star'
+								width='35px'
+								height='35px'
+								viewBox='0 0 35 35'
+							/>
+						</IconWrapper>
 					</MainColumnDesign>
 				</FlexContainer>
 			</Container>
@@ -138,13 +147,6 @@ const StyledStatisticsColumn = styled.div`
 	}
 `
 
-//const WrapperCard = styled.div`
-//	width: 100%;
-//	position: absolute;
-//	top: 468px;
-//	right: 0;
-//`
-
 const StyledSvg = styled.svg`
 	font-family: 'Lora';
 	fill: currentColor;
@@ -154,5 +156,11 @@ const StyledSvg = styled.svg`
 	width: 100%;
 	position: absolute;
 	top: 223px;
-	left: 0;
+	left: -60px;
+`
+
+const IconWrapper = styled.div`
+	position: absolute;
+	top: 290px;
+	left: 10px;
 `
