@@ -16,8 +16,8 @@ export const Subscribe = () => {
 			<Container>
 				<FlexContainer align='center' justify='space-between'>
 					<SubscribeColumn>
-						<Photo src={subscribeImg1} />
-						<Photo src={subscribeImg2} />
+						<PhotoOne src={subscribeImg1} />
+						<PhotoTwo src={subscribeImg2} />
 					</SubscribeColumn>
 					<SubscribeColumnTwo>
 						<SectionTitle>
@@ -42,18 +42,34 @@ const StyledSubscribe = styled.section``
 
 const SubscribeColumn = styled.div`
 	max-width: 630px;
+	position: relative;
 `
 
 const SubscribeColumnTwo = styled.div`
 	max-width: 520px;
 `
 
-const Photo = styled.img`
-	height: 340px;
+const PhotoOne = styled.img`
+	height: 376px;
 	max-width: 410px;
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 20px;
+
+	transform: rotate(-11.188deg);
+	margin-left: 30px;
+`
+
+const PhotoTwo = styled.img`
+	height: 348px;
+	max-width: 282px;
+	object-fit: cover;
+	object-position: 0 0;
+	border-radius: 20px;
+
+	position: absolute;
+	left: 237px;
+	top: 110px;
 `
 
 const FormContainer = styled.div`

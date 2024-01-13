@@ -30,12 +30,11 @@ export const CreateNft = () => {
 						</FlexContainer>
 					</MainColumnInfo>
 					<MainColumnPhoto>
-						<CardPhotoOne>
-							<PhotoOne src={photoOne} />
-						</CardPhotoOne>
-						<CardPhotoTwo>
-							<PhotoTwo src={photoTwo} />
-						</CardPhotoTwo>
+						<PhotoOne src={photoOne} />
+						<PhotoTwo src={photoTwo} />
+
+						{/*<CardPhotoTwo>
+						</CardPhotoTwo>*/}
 					</MainColumnPhoto>
 				</FlexContainer>
 			</Container>
@@ -43,7 +42,9 @@ export const CreateNft = () => {
 	)
 }
 
-const StyledCreateNft = styled.section``
+const StyledCreateNft = styled.section`
+	padding-bottom: 176px;
+`
 
 const MainColumnInfo = styled.div`
 	max-width: 426px;
@@ -51,30 +52,40 @@ const MainColumnInfo = styled.div`
 
 const MainColumnPhoto = styled.div`
 	max-width: 740px;
-	display: flex;
+	position: relative;
+
 `
 
-const CardPhotoOne = styled.div`
-	max-width: 410px;
-	max-height: 400px;
-`
+const CardPhoto = styled.div``
 
-const CardPhotoTwo = styled.div`
-	max-width: 410px;
-	max-height: 475px;
-`
+//const CardPhotoOne = styled.div`
+//	max-width: 410px;
+//	max-height: 400px;
+//`
+
+//const CardPhotoTwo = styled.div`
+//	max-width: 410px;
+//	max-height: 475px;
+//`
 
 const PhotoOne = styled.img`
-	width: 100%;
-	height: 100%;
+	max-width: 410px;
+	max-height: 400px;
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 24px;
+
+	position: absolute;
+	top: 160px;
+	right: 290px;
+
+	z-index: 999;
 `
 
 const PhotoTwo = styled.img`
-	width: 100%;
-	height: 100%;
+	max-width: 410px;
+	max-height: 475px;
+
 	object-fit: cover;
 	object-position: 0 50%;
 	border-radius: 24px;
