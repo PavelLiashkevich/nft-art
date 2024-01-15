@@ -53,7 +53,6 @@ const MainColumnInfo = styled.div`
 const MainColumnPhoto = styled.div`
 	max-width: 740px;
 	position: relative;
-
 `
 
 const CardPhoto = styled.div``
@@ -70,7 +69,8 @@ const CardPhoto = styled.div``
 
 const PhotoOne = styled.img`
 	max-width: 410px;
-	max-height: 400px;
+	height: 400px;
+	width: 100%;
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 24px;
@@ -84,7 +84,8 @@ const PhotoOne = styled.img`
 
 const PhotoTwo = styled.img`
 	max-width: 410px;
-	max-height: 475px;
+	height: 475px;
+	width: 100%;
 
 	object-fit: cover;
 	object-position: 0 50%;

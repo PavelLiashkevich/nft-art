@@ -52,8 +52,10 @@ const SubscribeColumnTwo = styled.div`
 `
 
 const PhotoOne = styled.img`
-	height: 376px;
 	max-width: 410px;
+	height: 376px;
+	width: 100%;
+
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 20px;
@@ -63,8 +65,10 @@ const PhotoOne = styled.img`
 `
 
 const PhotoTwo = styled.img`
-	height: 348px;
 	max-width: 282px;
+	height: 348px;
+	width: 100%;
+
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 20px;

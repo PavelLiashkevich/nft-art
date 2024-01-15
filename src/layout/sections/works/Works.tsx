@@ -25,14 +25,25 @@ export const Works = () => {
 					</SectionTitle>
 					<BaseButton text={'See All'} />
 				</FlexContainer>
-				<FlexContainer justify='space-between'>
+				<FlexContainer justify='center'>
+					<Wrap>
 					<Card src={ImageCard1} title={'Cyberpunk Cocomo'} price={490} />
 					<Card src={ImageCard2} title={'Charge, Qi tiao yu'} price={590} />
 					<Card src={ImageCard3} title={'Surgeon, Josh Rife'} price={390} />
+				</Wrap>
 				</FlexContainer>
+				
 			</Container>
 		</StyledWorks>
 	)
 }
 
 const StyledWorks = styled.section``
+
+const Wrap = styled.div`
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+	grid-auto-rows: 498px;
+	gap: 20px;
+`

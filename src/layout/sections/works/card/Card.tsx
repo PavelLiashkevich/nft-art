@@ -50,10 +50,11 @@ const StyledCard = styled.div`
 `
 
 const Image = styled.img`
+	max-width: 370px;
+	height: 340px;
 	width: 100%;
 	object-fit: cover;
 	object-position: 0 0;
-	max-height: 340px;
 	border-radius: 16px;
 	margin-bottom: 24px;
 `

@@ -112,7 +112,9 @@ const SectionMainTitle = styled.h1`
 
 const Photo = styled.img`
 	max-width: 464px;
-	height: 554px;
+	min-height: 554px;
+	width: 100%;
+
 	border-radius: 24px;
 	object-fit: cover;
 	object-position: 0 0;
