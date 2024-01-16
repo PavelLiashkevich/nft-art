@@ -21,6 +21,14 @@ body {
 	color: ${theme.colors.primary};
 }
 
+h1 {
+	font-size: calc( (100vw - 375px) / (1512 - 375) * (64 - 39) + 39px);
+}
+
+h2 {
+	font-size: calc( (100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
+}
+
 a {
 	text-decoration: none;
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import { CardButton } from '../buttons/CardButton'
 import { FlexContainer } from '../FlexContainer'
+import { theme } from '../../styles/Theme'
 
 export const CardBid = () => {
 	return (
@@ -9,11 +11,11 @@ export const CardBid = () => {
 			<FlexContainer align={'center'} justify={'space-between'}>
 				<InfoColumn>
 					<span>Ends in</span>
-					<span>05:45:47</span>
+					<Info>05:45:47</Info>
 				</InfoColumn>
 				<InfoColumn>
 					<span>Current bid</span>
-					<span>0.24ETH</span>
+					<Info>0.24ETH</Info>
 				</InfoColumn>
 			</FlexContainer>
 			<CardButton />
@@ -40,4 +42,10 @@ const InfoColumn = styled.div`
 	flex-direction: column;
 	margin-bottom: 24px;
 	gap: 8px;
+`
+
+const Info = styled.span`
+	color: ${theme.colors.primary};
+	font-weight: 700;
+	line-height: 120%; 
 `

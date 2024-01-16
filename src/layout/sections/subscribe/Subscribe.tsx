@@ -44,6 +44,7 @@ const StyledSubscribe = styled.section`
 
 const SubscribeColumn = styled.div`
 	max-width: 630px;
+	padding-right: 185px;
 	position: relative;
 `
 
@@ -54,7 +55,6 @@ const SubscribeColumnTwo = styled.div`
 const PhotoOne = styled.img`
 	max-width: 410px;
 	height: 376px;
-	width: 100%;
 
 	object-fit: cover;
 	object-position: 0 0;
@@ -67,7 +67,6 @@ const PhotoOne = styled.img`
 const PhotoTwo = styled.img`
 	max-width: 282px;
 	height: 348px;
-	width: 100%;
 
 	object-fit: cover;
 	object-position: 0 0;

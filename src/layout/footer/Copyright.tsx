@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { FlexContainer } from '../../components/FlexContainer'
+import { theme } from '../../styles/Theme'
 
 export const Copyright = () => {
 	return (
@@ -10,10 +11,10 @@ export const Copyright = () => {
 			<Additional>
 				<AdditionalList>
 					<AdditionalItem>
-						<AdditionalLink>Privacy Policy</AdditionalLink>
+						<AdditionalLink href='#'>Privacy Policy</AdditionalLink>
 					</AdditionalItem>
 					<AdditionalItem>
-						<AdditionalLink>Terms & Conditions</AdditionalLink>
+						<AdditionalLink href='#'>Terms & Conditions</AdditionalLink>
 					</AdditionalItem>
 				</AdditionalList>
 			</Additional>
@@ -22,7 +23,7 @@ export const Copyright = () => {
 }
 
 const CopyrightText = styled.span`
-	color: #fffffd;
+	color: ${theme.colors.primary};
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -35,14 +36,21 @@ const AdditionalList = styled.ul`
 `
 
 const AdditionalItem = styled.li`
-	color: #fffffd;
+	color: ${theme.colors.primary};
 	text-align: center;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
+	
 	:first-child {
 		margin-right: 24px;
 	}
 `
 
-const AdditionalLink = styled.a``
+const AdditionalLink = styled.a`
+	color: ${theme.colors.primary};
+
+	:hover {
+		cursor: pointer;
+	}
+`

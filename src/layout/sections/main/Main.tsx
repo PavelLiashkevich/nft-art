@@ -94,13 +94,12 @@ const MainColumnInfo = styled.div`
 `
 
 const MainColumnDesign = styled.div`
-	max-width: 575px;
+	padding: 0 55px 0 70px;
 	position: relative;
 `
 
 const SectionMainTitle = styled.h1`
 	font-family: 'Lora';
-	font-size: 64px;
 	font-weight: 500;
 	line-height: 120%;
 	margin-bottom: 20px;
@@ -112,13 +111,11 @@ const SectionMainTitle = styled.h1`
 
 const Photo = styled.img`
 	max-width: 464px;
-	min-height: 554px;
-	width: 100%;
-
+	height: 544px;
+	
 	border-radius: 24px;
 	object-fit: cover;
 	object-position: 0 0;
-	margin-right: 51px;
 `
 
 const StyledStatisticsColumn = styled.div`
@@ -134,7 +131,6 @@ const StyledStatisticsColumn = styled.div`
 
 	h2 {
 		color: ${theme.colors.secondary};
-		font-size: 48px;
 
 		span {
 			color: ${theme.colors.primary};
@@ -158,11 +154,11 @@ const StyledSvg = styled.svg`
 	width: 100%;
 	position: absolute;
 	top: 223px;
-	left: -60px;
+	left: 0;
 `
 
 const IconWrapper = styled.div`
 	position: absolute;
 	top: 290px;
-	left: 10px;
+	left: 68px;
 `

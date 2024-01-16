@@ -11,6 +11,7 @@ export const SubscribeButton = (props: SubscribeButtonPropsType) => {
 }
 
 const StyledSubscribeButton = styled.button`
+    font-size: 16px;
 	padding: 12px 40px;
 	border-radius: 8px;
 	border-style: none;
@@ -18,5 +19,5 @@ const StyledSubscribeButton = styled.button`
 	background: #d3f85a;
 	position: absolute;
 	right: 4px;
-	top: 6px;
+	top: 4px;
 `

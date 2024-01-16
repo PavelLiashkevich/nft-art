@@ -89,6 +89,9 @@ const SocialLinks = styled.div`
 
 const SocialList = styled.ul`
 	display: flex;
+	li + li {
+		margin-left: 12px;
+	}
 `
 
 const SocialItem = styled.li``

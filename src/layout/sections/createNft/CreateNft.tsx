@@ -30,11 +30,12 @@ export const CreateNft = () => {
 						</FlexContainer>
 					</MainColumnInfo>
 					<MainColumnPhoto>
-						<PhotoOne src={photoOne} />
-						<PhotoTwo src={photoTwo} />
-
-						{/*<CardPhotoTwo>
-						</CardPhotoTwo>*/}
+						<PhotoWrapperOne>
+							<PhotoOne src={photoOne} />
+						</PhotoWrapperOne>
+						<PhotoWrapperTwo>
+						<	PhotoTwo src={photoTwo} />
+						</PhotoWrapperTwo>
 					</MainColumnPhoto>
 				</FlexContainer>
 			</Container>
@@ -52,40 +53,38 @@ const MainColumnInfo = styled.div`
 
 const MainColumnPhoto = styled.div`
 	max-width: 740px;
+	padding-left: 330px;
 	position: relative;
 `
 
-const CardPhoto = styled.div``
+const PhotoWrapperOne = styled.div`
+	width: 410px;
+	height: 400px;
 
-//const CardPhotoOne = styled.div`
-//	max-width: 410px;
-//	max-height: 400px;
-//`
+	position: absolute;
+	right: 330px;
+	top: 160px;
+`
 
-//const CardPhotoTwo = styled.div`
-//	max-width: 410px;
-//	max-height: 475px;
-//`
+const PhotoWrapperTwo = styled.div`
+	width: 410px;
+	height: 475px;
+`
 
 const PhotoOne = styled.img`
-	max-width: 410px;
-	height: 400px;
 	width: 100%;
+	height: 100%;
+
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 24px;
-
-	position: absolute;
-	top: 160px;
-	right: 290px;
 
 	z-index: 999;
 `
 
 const PhotoTwo = styled.img`
-	max-width: 410px;
-	height: 475px;
 	width: 100%;
+	height: 100%;
 
 	object-fit: cover;
 	object-position: 0 50%;
