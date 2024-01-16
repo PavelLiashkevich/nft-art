@@ -34,19 +34,19 @@ export const Main = () => {
 						<FlexContainer justify={'space-between'}>
 							<StyledStatisticsColumn>
 								<h2>
-									8.9<span>K</span>
+									8.9
 								</h2>
 								<span>Art work</span>
 							</StyledStatisticsColumn>
 							<StyledStatisticsColumn>
 								<h2>
-									65<span>K</span>
+									65
 								</h2>
 								<span>Artist</span>
 							</StyledStatisticsColumn>
 							<StyledStatisticsColumn>
 								<h2>
-									87<span>K</span>
+									87
 								</h2>
 								<span>Collection</span>
 							</StyledStatisticsColumn>
@@ -131,11 +131,12 @@ const StyledStatisticsColumn = styled.div`
 
 	h2 {
 		color: ${theme.colors.secondary};
-
-		span {
+		::after {
+			content: 'K';
 			color: ${theme.colors.primary};
 			font-family: 'Lora';
-			font-size: 48px;
+			font-size: calc( (100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
+
 		}
 	}
 
