@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/nft-art/static/js/main.aee42a16.js",
+    "main.js": "/nft-art/static/js/main.520a101b.js",
     "static/js/787.25eaef86.chunk.js": "/nft-art/static/js/787.25eaef86.chunk.js",
     "static/media/subscribeImg2.webp": "/nft-art/static/media/subscribeImg2.56be0c693247533b227e.webp",
     "static/media/mainImage.webp": "/nft-art/static/media/mainImage.9eab4322d57d22f1d4ae.webp",
@@ -12,10 +12,10 @@
     "static/media/createNft1.webp": "/nft-art/static/media/createNft1.0b91af67837f32242e37.webp",
     "static/media/icons-sprite.svg": "/nft-art/static/media/icons-sprite.5ee99a6389366d691e2971bdb320f7ac.svg",
     "index.html": "/nft-art/index.html",
-    "main.aee42a16.js.map": "/nft-art/static/js/main.aee42a16.js.map",
+    "main.520a101b.js.map": "/nft-art/static/js/main.520a101b.js.map",
     "787.25eaef86.chunk.js.map": "/nft-art/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.aee42a16.js"
+    "static/js/main.520a101b.js"
   ]
 }
