@@ -26,6 +26,10 @@ const StyledMenu = styled.nav`
 			color: ${theme.colors.disable};
 		}
 	}
+
+	@media ${theme.media.tablet} {
+		display: none;
+	}
 `
 
 const ListItem = styled.li`

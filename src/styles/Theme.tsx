@@ -6,4 +6,9 @@ export const theme = {
 		btnText: '#090F1D',
 		bg: 'rgba(9, 15, 29, 1)',
 	},
+
+	media: {
+		tablet: 'screen and (max-width: 768px)',
+		mobile: 'screen and (max-width: 576px)',
+	},
 }
