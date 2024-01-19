@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 import { Logo } from '../../components/logo/Logo'
 import { Menu } from '../../components/menu/Menu'
-import { BaseButton } from '../../components/buttons/BaseButton'
 import { Container } from '../../components/Container'
 import { FlexContainer } from '../../components/FlexContainer'
 import { MobileMenu } from './mobileMenu/MobileMenu'
+import { HeaderButton } from './headerButton/HeaderButton'
 
 const items = ['Marketplace', 'Artists', 'Community', 'Collections']
 
@@ -18,7 +18,7 @@ export const Header = () => {
 					<Logo />
 					<Menu menuItems={items} />
 					<MobileMenu menuItems={items}/>
-					<BaseButton text='Contact' />
+					<HeaderButton>Contact</HeaderButton>
 				</FlexContainer>
 			</Container>
 		</StyledHeader>
@@ -28,3 +28,5 @@ export const Header = () => {
 const StyledHeader = styled.header`
 	padding: 28px 0;
 `
+
+	

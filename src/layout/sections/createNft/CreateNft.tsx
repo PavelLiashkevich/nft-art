@@ -10,12 +10,13 @@ import { Container } from '../../../components/Container'
 
 import photoOne from '../../../assets/images/others/createNft1.webp'
 import photoTwo from '../../../assets/images/others/createNft2.webp'
+import { theme } from '../../../styles/Theme'
 
 export const CreateNft = () => {
 	return (
 		<StyledCreateNft>
 			<Container>
-				<FlexContainer align={'center'} justify={'space-between'}>
+				<FlexContainer align={'center'} justify={'center'} wrap='wrap'>
 					<MainColumnInfo>
 						<SectionTitle>
 							Create And Sell Your <span>Best NFTs</span>
@@ -34,7 +35,7 @@ export const CreateNft = () => {
 							<PhotoOne src={photoOne} />
 						</PhotoWrapperOne>
 						<PhotoWrapperTwo>
-						<	PhotoTwo src={photoTwo} />
+							<	PhotoTwo src={photoTwo} />
 						</PhotoWrapperTwo>
 					</MainColumnPhoto>
 				</FlexContainer>
@@ -55,6 +56,14 @@ const MainColumnPhoto = styled.div`
 	max-width: 740px;
 	padding-left: 330px;
 	position: relative;
+
+	@media screen and (max-width: 1197px) {
+		margin-top: 48px;
+	}
+
+	@media ${theme.media.tablet} {
+		padding-left: 70px;
+	}
 `
 
 const PhotoWrapperOne = styled.div`
@@ -64,11 +73,39 @@ const PhotoWrapperOne = styled.div`
 	position: absolute;
 	right: 330px;
 	top: 160px;
+
+	@media ${theme.media.tablet} {
+		width: 330px;
+		height: 340px;
+
+		right: 70px;
+		top: 240px;
+	}
+
+	@media ${theme.media.mobile} {
+		width: 230px;
+		height: 230px;
+
+		top: 175px;
+	}
 `
 
 const PhotoWrapperTwo = styled.div`
 	width: 410px;
 	height: 475px;
+
+	@media ${theme.media.tablet} {
+		width: 320px;
+		height: 360px;
+
+		right: 70px;
+		top: 160px;
+	}
+
+	@media ${theme.media.mobile} {
+		width: 230px;
+		height: 240px;
+	}
 `
 
 const PhotoOne = styled.img`

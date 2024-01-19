@@ -9,7 +9,7 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 				{props.menuItems.map((item, index) => {
 					return (
 						<ListItem key={index}>
-							<Link href=''>{item}</Link>
+							<Link href='#'>{item}</Link>
 						</ListItem>
 					)
 				})}
@@ -22,8 +22,13 @@ const StyledMenu = styled.nav`
 	ul {
 		display: flex;
 		gap: 40px;
+
 		li > a {
 			color: ${theme.colors.disable};
+		}
+
+		@media screen and (max-width: 992px) {
+			gap: 18px;
 		}
 	}
 

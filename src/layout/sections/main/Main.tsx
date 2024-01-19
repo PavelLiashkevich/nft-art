@@ -16,7 +16,7 @@ export const Main = () => {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexContainer align={'center'} justify={'space-between'}>
+				<FlexContainer align={'center'} justify={'center'} wrap={'wrap'}>
 					<MainColumnInfo>
 						<SectionMainTitle>
 							Discover and Collect The Best NFTs <span>Digital Art.</span>
@@ -94,8 +94,20 @@ const MainColumnInfo = styled.div`
 `
 
 const MainColumnDesign = styled.div`
-	padding: 0 55px 0 70px;
-	position: relative;
+	padding: 0 55px 0 150px;
+	position: relative;	
+	
+	@media screen and (max-width: 1244px){
+		margin-top: 48px;
+	}
+
+	@media screen and (max-width: 1164px){
+		margin-top: 48px;
+	}
+
+	@media screen and (max-width: 375px){
+		padding: 0 55px 0 70px;
+	}
 `
 
 const SectionMainTitle = styled.h1`
@@ -110,12 +122,22 @@ const SectionMainTitle = styled.h1`
 `
 
 const Photo = styled.img`
-	max-width: 464px;
+	width: 464px;
 	height: 544px;
 	
 	border-radius: 24px;
 	object-fit: cover;
 	object-position: 0 0;
+
+	@media ${theme.media.tablet} {
+		width: 354px;
+		height: 404px;
+	}
+
+	@media ${theme.media.mobile} {
+		width: 294px;
+		height: 344px;
+	}
 `
 
 const StyledStatisticsColumn = styled.div`
@@ -155,11 +177,40 @@ const StyledSvg = styled.svg`
 	width: 100%;
 	position: absolute;
 	top: 223px;
-	left: 0;
+	left: 90px;
+
+	@media ${theme.media.tablet} {
+		max-width: 130px;
+		top: 140px;
+		left: 110px
+	}
+
+	@media ${theme.media.mobile} {
+		max-width: 110px;
+		left: 120px
+	}
+
+	@media screen and (max-width: 375px){
+		left: 40px
+	}
 `
 
 const IconWrapper = styled.div`
 	position: absolute;
 	top: 290px;
-	left: 68px;
+	left: 157px;
+
+	@media ${theme.media.tablet} {
+		max-width: 130px;
+		top: 187px;
+	}
+
+	@media ${theme.media.mobile} {
+		top: 176px;
+		left: 157px
+	}
+
+	@media screen and (max-width: 375px){
+		left: 78px
+	}
 `

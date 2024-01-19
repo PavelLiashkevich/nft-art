@@ -6,7 +6,7 @@ import { theme } from '../../styles/Theme'
 
 export const Copyright = () => {
 	return (
-		<FlexContainer justify='space-between' align='center' marginTop='48px'>
+		<FlexContainer justify='space-between' align='center' marginTop='48px' wrap='wrap'>
 			<CopyrightText>© Copyright 2023 - Creativeart</CopyrightText>
 			<Additional>
 				<AdditionalList>
@@ -29,7 +29,11 @@ const CopyrightText = styled.span`
 	font-weight: 400;
 `
 
-const Additional = styled.div``
+const Additional = styled.div`
+	@media screen and (max-width: 546px) {
+		margin-top: 16px;
+	}
+`
 
 const AdditionalList = styled.ul`
 	display: flex;

@@ -8,6 +8,7 @@ import { StyledDescription } from '../../components/Description'
 import { FooterMenu } from './FooterMenu'
 import { Container } from '../../components/Container'
 import { Copyright } from './Copyright'
+import { theme } from '../../styles/Theme'
 
 const exploreItems = ['Art Sign In', 'Collectibles', 'Domain Name', 'Utility']
 const statisticItems = ['Ranking', 'Collectibles', 'Activity']
@@ -19,7 +20,7 @@ export const Footer = () => {
 		<StyledFooter>
 			<Container>
 				<Border>
-					<FlexContainer justify='space-between' marginBottom='48px'>
+					<FlexContainer justify='space-between' marginBottom='48px' wrap='wrap'>
 						<SocialLinks>
 							<Logo />
 							<StyledDescription marginBottom='24px'>
@@ -100,11 +101,32 @@ const SocialIconLink = styled.a``
 
 const OtherLinks = styled.div`
 	display: flex;
+
+	@media screen and (max-width: 990px) {
+		margin-top: 48px;
+	}
+
+	@media ${theme.media.tablet} {
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	@media screen and (max-width: 473px) {
+		margin-top: 48px;
+	}
 `
 
 const LinksColumn = styled.div`
 	:not(:last-child) {
 		margin-right: 94px;
+	}
+
+	@media ${theme.media.tablet} {
+		:not(:last-child) {
+			margin-right: 64px;
+			margin-bottom: 20px;
+		}
+		
 	}
 `
 
@@ -114,4 +136,8 @@ const ListName = styled.h4`
 	font-style: normal;
 	font-weight: 700;
 	margin-bottom: 24px;
+
+	@media ${theme.media.tablet} {
+		margin-bottom: 10px;
+	}
 `

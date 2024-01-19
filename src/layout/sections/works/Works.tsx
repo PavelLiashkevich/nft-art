@@ -46,4 +46,8 @@ const Wrap = styled.div`
 	grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
 	grid-auto-rows: 498px;
 	gap: 20px;
+
+	@media screen and (max-width: 1290px){
+		justify-items: center;
+	}
 `

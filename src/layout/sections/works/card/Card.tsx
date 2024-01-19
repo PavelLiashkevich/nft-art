@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { FlexContainer } from '../../../../components/FlexContainer'
 import { Icon } from '../../../../components/icon/Icon'
 import { CardBtn } from './CardBtn'
+import { theme } from '../../../../styles/Theme'
 
 type CardPropsType = {
 	title: string
@@ -41,18 +42,17 @@ export const Card = (props: CardPropsType) => {
 const StyledCard = styled.div`
 	padding: 20px;
 	border-radius: 16px;
-	border-top: 1px solid #d3f85a;
+	border-top: 1px solid ${theme.colors.secondary};
 	background: #131e3a;
 	box-shadow: 0px 9px 50px 0px rgba(23, 36, 65, 0.04);
 	max-width: 410px;
 	width: 100%;
-	color: #d3f85a;
+	color: ${theme.colors.secondary};
 `
 
 const Image = styled.img`
-	max-width: 370px;
+	width: 370px;
 	height: 340px;
-	width: 100%;
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 16px;
@@ -60,7 +60,7 @@ const Image = styled.img`
 `
 
 const Title = styled.h4`
-	color: #fffffd;
+	color: ${theme.colors.primary};
 	font-size: 24px;
 	line-height: 120%;
 `
@@ -83,7 +83,7 @@ const MiniTitle = styled.span`
 `
 
 const Time = styled.span`
-	color: #fffffd;
+	color: ${theme.colors.primary};
 	margin-left: 12px;
 	font-size: 16px;
 	font-weight: 700;

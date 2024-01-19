@@ -9,12 +9,13 @@ import { Container } from '../../../components/Container'
 
 import subscribeImg1 from '../../../assets/images/others/subscribeImg1.webp'
 import subscribeImg2 from '../../../assets/images/others/subscribeImg2.webp'
+import { theme } from '../../../styles/Theme'
 
 export const Subscribe = () => {
 	return (
 		<StyledSubscribe>
 			<Container>
-				<FlexContainer align='center' justify='space-between'>
+				<FlexContainer align='center' justify='center' wrap='wrap-reverse'>
 					<SubscribeColumn>
 						<PhotoOne src={subscribeImg1} />
 						<PhotoTwo src={subscribeImg2} />
@@ -46,14 +47,22 @@ const SubscribeColumn = styled.div`
 	max-width: 630px;
 	padding-right: 185px;
 	position: relative;
+
+	@media ${theme.media.tablet} {
+		padding-right: 130px;
+	}
 `
 
 const SubscribeColumnTwo = styled.div`
 	max-width: 520px;
+
+	@media screen and (max-width: 1176px) {
+		margin-bottom: 100px;
+	}
 `
 
 const PhotoOne = styled.img`
-	max-width: 410px;
+	width: 410px;
 	height: 376px;
 
 	object-fit: cover;
@@ -62,10 +71,23 @@ const PhotoOne = styled.img`
 
 	transform: rotate(-11.188deg);
 	margin-left: 30px;
+
+	@media ${theme.media.mobile} {
+		width: 280px;
+		height: 290px;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 220px;
+		height: 270px;
+
+		margin-left: 80px;
+
+	}
 `
 
 const PhotoTwo = styled.img`
-	max-width: 282px;
+	width: 282px;
 	height: 348px;
 
 	object-fit: cover;
@@ -75,6 +97,11 @@ const PhotoTwo = styled.img`
 	position: absolute;
 	left: 237px;
 	top: 110px;
+
+	@media ${theme.media.mobile} {
+		width: 190px;
+		height: 240px;
+	}
 `
 
 const FormContainer = styled.div`
@@ -86,6 +113,7 @@ const StyledInput = styled.input.attrs(props => ({
 	type: props.type || 'text',
 	placeholder: props.placeholder || 'NFT Art',
 }))`
+
 	width: 100%;
 	padding: 16px 24px;
 	border-radius: 8px;

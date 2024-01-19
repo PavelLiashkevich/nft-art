@@ -35,6 +35,11 @@ export const StyledCardBid = styled.div`
 	width: 100%;
 	right: 0;
 	top: 468px;
+
+	@media ${theme.media.tablet} {
+		top: 280px;
+		width: 60%;
+	}
 `
 
 const InfoColumn = styled.div`
