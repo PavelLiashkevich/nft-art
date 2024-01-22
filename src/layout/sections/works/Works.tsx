@@ -10,6 +10,7 @@ import { Container } from '../../../components/Container'
 import ImageCard1 from '../../../assets/images/others/image1.webp'
 import ImageCard2 from '../../../assets/images/others/image2.webp'
 import ImageCard3 from '../../../assets/images/others/image3.webp'
+import { theme } from '../../../styles/Theme'
 
 export const Works = () => {
 	return (
@@ -49,5 +50,9 @@ const Wrap = styled.div`
 
 	@media screen and (max-width: 1290px){
 		justify-items: center;
+	}
+
+	@media ${theme.media.mobile} {
+		gap: 16px;
 	}
 `

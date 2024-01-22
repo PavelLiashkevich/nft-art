@@ -94,7 +94,6 @@ const MainColumnInfo = styled.div`
 `
 
 const MainColumnDesign = styled.div`
-	padding: 0 55px 0 150px;
 	position: relative;	
 	
 	@media screen and (max-width: 1244px){
@@ -105,9 +104,9 @@ const MainColumnDesign = styled.div`
 		margin-top: 48px;
 	}
 
-	@media ${theme.media.mobile} {
+	/* @media ${theme.media.mobile} {
 		padding: 0 155px 0 155px;
-	}
+	} */
 
 	@media screen and (max-width: 375px){
 		padding: 0 55px 0 70px;
@@ -180,12 +179,12 @@ const StyledSvg = styled.svg`
 	width: 100%;
 	position: absolute;
 	top: 223px;
-	left: 90px;
+	left: -50px;
 
 	@media ${theme.media.tablet} {
 		max-width: 130px;
-		top: 140px;
-		left: 110px
+		top: 180px;
+		left: -30px
 	}
 
 	@media ${theme.media.mobile} {
@@ -201,11 +200,11 @@ const StyledSvg = styled.svg`
 const IconWrapper = styled.div`
 	position: absolute;
 	top: 290px;
-	left: 157px;
+	left: 19px;
 
 	@media ${theme.media.tablet} {
-		max-width: 130px;
-		top: 187px;
+		max-width: 35px;
+		top: 225px;
 	}
 
 	@media ${theme.media.mobile} {

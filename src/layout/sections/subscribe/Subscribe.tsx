@@ -15,10 +15,10 @@ export const Subscribe = () => {
 	return (
 		<StyledSubscribe>
 			<Container>
-				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
+				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<SubscribeColumn>
-						<PhotoOne src={subscribeImg1} />
 						<PhotoTwo src={subscribeImg2} />
+						<PhotoOne src={subscribeImg1} />
 					</SubscribeColumn>
 					<SubscribeColumnTwo>
 						<SectionTitle>
@@ -41,24 +41,25 @@ export const Subscribe = () => {
 
 const StyledSubscribe = styled.section`
 	padding: 92px 0 124px;
+
+	@media screen and (max-width: 1181px) {
+		padding-bottom: 0;
+	}
 `
 
 const SubscribeColumn = styled.div`
-	max-width: 630px;
-	padding-right: 185px;
+	width: 630px;
+    height: 458px;
 	position: relative;
 
-	@media ${theme.media.tablet} {
-		padding-right: 130px;
+	@media screen and (max-width: 1181px) {
+		order: 1;
+		margin-top: 130px;
 	}
 `
 
 const SubscribeColumnTwo = styled.div`
 	max-width: 520px;
-
-	@media screen and (max-width: 1176px) {
-		margin-bottom: 100px;
-	}
 `
 
 const PhotoOne = styled.img`
@@ -82,7 +83,6 @@ const PhotoOne = styled.img`
 		height: 270px;
 
 		margin-left: 80px;
-
 	}
 `
 
@@ -95,8 +95,9 @@ const PhotoTwo = styled.img`
 	border-radius: 20px;
 
 	position: absolute;
-	left: 237px;
+	right: 0;
 	top: 110px;
+	z-index: 999;
 
 	@media ${theme.media.mobile} {
 		width: 190px;

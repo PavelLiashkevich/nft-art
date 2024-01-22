@@ -58,7 +58,7 @@ const MainColumnPhoto = styled.div`
 	position: relative;
 
 	@media screen and (max-width: 1197px) {
-		margin-top: 48px;
+		margin-top: 100px;
 	}
 
 	@media ${theme.media.tablet} {
@@ -78,8 +78,8 @@ const PhotoWrapperOne = styled.div`
 		width: 330px;
 		height: 340px;
 
-		right: 70px;
-		top: 240px;
+		right: 100px;
+		top: 180px;
 	}
 
 	@media ${theme.media.mobile} {

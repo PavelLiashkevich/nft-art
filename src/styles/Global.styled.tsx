@@ -29,6 +29,10 @@ h2 {
 	font-size: calc( (100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
 }
 
+h4 {
+	font-size: calc( (100vw - 375px) / (1512 - 375) * (24 - 20) + 20px);
+}
+
 a {
 	text-decoration: none;
 }

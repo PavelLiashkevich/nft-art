@@ -10,6 +10,7 @@ const StyledCardButton = styled.a`
 	border-radius: 8px;
 	border: 1px solid #d3f85a;
 	background: #131e3a;
+	font-weight: 700;
 
 	:hover {
 		cursor: pointer;

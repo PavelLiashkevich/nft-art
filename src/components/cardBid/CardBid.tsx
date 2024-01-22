@@ -33,17 +33,20 @@ export const StyledCardBid = styled.div`
 	color: #d3f85a;
 	position: absolute;
 	width: 100%;
-	right: 0;
+	right: -50px;
 	top: 468px;
 
+	@media screen and (max-width: 1181px) {
+		right: -25px;
+	}
+	
 	@media ${theme.media.tablet} {
 		top: 280px;
-		width: 60%;
+		width: 80%;
 	}
 
 	@media ${theme.media.mobile} {
 		margin: 0 90px 0 0;
-
 	}
 `
 

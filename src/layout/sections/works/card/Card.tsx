@@ -48,6 +48,10 @@ const StyledCard = styled.div`
 	max-width: 410px;
 	width: 100%;
 	color: ${theme.colors.secondary};
+
+	@media ${theme.media.mobile} {
+		max-width: 343px;
+	}
 `
 
 const Image = styled.img`
@@ -57,11 +61,13 @@ const Image = styled.img`
 	object-position: 0 0;
 	border-radius: 16px;
 	margin-bottom: 24px;
+	@media ${theme.media.mobile} {
+		width: 311px;
+	}
 `
 
 const Title = styled.h4`
 	color: ${theme.colors.primary};
-	font-size: 24px;
 	line-height: 120%;
 `
 
