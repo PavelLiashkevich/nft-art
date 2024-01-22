@@ -33,21 +33,15 @@ export const Main = () => {
 						</FlexContainer>
 						<FlexContainer justify={'space-between'}>
 							<StyledStatisticsColumn>
-								<h2>
-									8.9
-								</h2>
+								<h2>8.9</h2>
 								<span>Art work</span>
 							</StyledStatisticsColumn>
 							<StyledStatisticsColumn>
-								<h2>
-									65
-								</h2>
+								<h2>65</h2>
 								<span>Artist</span>
 							</StyledStatisticsColumn>
 							<StyledStatisticsColumn>
-								<h2>
-									87
-								</h2>
+								<h2>87</h2>
 								<span>Collection</span>
 							</StyledStatisticsColumn>
 						</FlexContainer>
@@ -94,22 +88,14 @@ const MainColumnInfo = styled.div`
 `
 
 const MainColumnDesign = styled.div`
-	position: relative;	
-	
-	@media screen and (max-width: 1244px){
+	position: relative;
+
+	@media screen and (max-width: 1244px) {
 		margin-top: 48px;
 	}
 
-	@media screen and (max-width: 1164px){
+	@media screen and (max-width: 1164px) {
 		margin-top: 48px;
-	}
-
-	/* @media ${theme.media.mobile} {
-		padding: 0 155px 0 155px;
-	} */
-
-	@media screen and (max-width: 375px){
-		padding: 0 55px 0 70px;
 	}
 `
 
@@ -127,7 +113,7 @@ const SectionMainTitle = styled.h1`
 const Photo = styled.img`
 	width: 464px;
 	height: 544px;
-	
+
 	border-radius: 24px;
 	object-fit: cover;
 	object-position: 0 0;
@@ -160,7 +146,7 @@ const StyledStatisticsColumn = styled.div`
 			content: 'K';
 			color: ${theme.colors.primary};
 			font-family: 'Lora';
-			font-size: calc( (100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
+			font-size: calc((100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
 		}
 	}
 
@@ -184,16 +170,17 @@ const StyledSvg = styled.svg`
 	@media ${theme.media.tablet} {
 		max-width: 130px;
 		top: 180px;
-		left: -30px
+		left: -30px;
 	}
 
 	@media ${theme.media.mobile} {
 		max-width: 110px;
-		left: 120px
+		left: -45px;
+		top: 150px;
 	}
 
-	@media screen and (max-width: 375px){
-		left: 40px
+	@media screen and (max-width: 375px) {
+		left: 40px;
 	}
 `
 
@@ -209,10 +196,13 @@ const IconWrapper = styled.div`
 
 	@media ${theme.media.mobile} {
 		top: 176px;
-		left: 157px
+		left: 157px;
+
+		top: 186px;
+		left: -7px;
 	}
 
-	@media screen and (max-width: 375px){
-		left: 78px
+	@media screen and (max-width: 375px) {
+		left: 78px;
 	}
 `

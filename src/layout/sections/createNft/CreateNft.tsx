@@ -35,7 +35,7 @@ export const CreateNft = () => {
 							<PhotoOne src={photoOne} />
 						</PhotoWrapperOne>
 						<PhotoWrapperTwo>
-							<	PhotoTwo src={photoTwo} />
+							<PhotoTwo src={photoTwo} />
 						</PhotoWrapperTwo>
 					</MainColumnPhoto>
 				</FlexContainer>

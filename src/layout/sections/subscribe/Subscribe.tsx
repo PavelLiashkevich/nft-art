@@ -17,8 +17,12 @@ export const Subscribe = () => {
 			<Container>
 				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<SubscribeColumn>
-						<PhotoTwo src={subscribeImg2} />
-						<PhotoOne src={subscribeImg1} />
+						<PhotoWrapperOne>
+							<PhotoOne src={subscribeImg1} />
+						</PhotoWrapperOne>
+						<PhotoWrapperTwo>
+							<PhotoTwo src={subscribeImg2} />
+						</PhotoWrapperTwo>
 					</SubscribeColumn>
 					<SubscribeColumnTwo>
 						<SectionTitle>
@@ -41,40 +45,60 @@ export const Subscribe = () => {
 
 const StyledSubscribe = styled.section`
 	padding: 92px 0 124px;
-
-	@media screen and (max-width: 1181px) {
-		padding-bottom: 0;
-	}
 `
 
 const SubscribeColumn = styled.div`
-	width: 630px;
-    height: 458px;
+	max-width: 630px;
 	position: relative;
 
-	@media screen and (max-width: 1181px) {
+	padding-right: 170px;
+
+	@media screen and (max-width: 1131px) {
 		order: 1;
 		margin-top: 130px;
 	}
+
+	@media ${theme.media.mobile} {
+		max-width: 343px;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding-right: 10px;
+	}
 `
 
-const SubscribeColumnTwo = styled.div`
-	max-width: 520px;
-`
-
-const PhotoOne = styled.img`
+const PhotoWrapperOne = styled.div`
 	width: 410px;
 	height: 376px;
 
+	@media ${theme.media.tablet} {
+		width: 380px;
+		height: 360px;
+	}
+
+	@media ${theme.media.mobile} {
+		width: 320px;
+		height: 290px;
+	}
+`
+const PhotoOne = styled.img`
+	width: 100%;
+	height: 100%;
+
 	object-fit: cover;
-	object-position: 0 0;
+	object-position: 0 30%;
 	border-radius: 20px;
 
 	transform: rotate(-11.188deg);
 	margin-left: 30px;
 
+	@media ${theme.media.tablet} {
+		width: 380px;
+		height: 360px;
+	}
+
 	@media ${theme.media.mobile} {
-		width: 280px;
+		width: 320px;
 		height: 290px;
 	}
 
@@ -86,23 +110,53 @@ const PhotoOne = styled.img`
 	}
 `
 
-const PhotoTwo = styled.img`
+const PhotoWrapperTwo = styled.div`
 	width: 282px;
 	height: 348px;
+
+	position: absolute;
+	top: 110px;
+	left: 280px;
+
+	@media ${theme.media.tablet} {
+		width: 242px;
+		height: 300px;
+
+		right: 70px;
+		top: 160px;
+	}
+
+	@media ${theme.media.mobile} {
+		width: 230px;
+		height: 240px;
+
+		left: 100px;
+	}
+`
+
+const PhotoTwo = styled.img`
+	width: 100%;
+	height: 100%;
 
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 20px;
 
-	position: absolute;
-	right: 0;
-	top: 110px;
 	z-index: 999;
 
+	@media ${theme.media.tablet} {
+		width: 242px;
+		height: 300px;
+	}
+
 	@media ${theme.media.mobile} {
-		width: 190px;
+		width: 230px;
 		height: 240px;
 	}
+`
+
+const SubscribeColumnTwo = styled.div`
+	max-width: 520px;
 `
 
 const FormContainer = styled.div`
@@ -114,7 +168,6 @@ const StyledInput = styled.input.attrs(props => ({
 	type: props.type || 'text',
 	placeholder: props.placeholder || 'NFT Art',
 }))`
-
 	width: 100%;
 	padding: 16px 24px;
 	border-radius: 8px;

@@ -42,11 +42,11 @@ export const StyledCardBid = styled.div`
 	
 	@media ${theme.media.tablet} {
 		top: 280px;
-		width: 80%;
+		width: 90%;
 	}
 
 	@media ${theme.media.mobile} {
-		margin: 0 90px 0 0;
+		right: 10px;
 	}
 `
 
