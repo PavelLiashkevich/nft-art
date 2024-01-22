@@ -13,4 +13,8 @@ const StyledCardButton = styled.a`
 	display: inline-block;
 	width: 100%;
 	text-align: center;
+
+	:hover {
+		cursor: pointer;
+	}
 `

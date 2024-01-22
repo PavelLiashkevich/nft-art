@@ -40,6 +40,11 @@ export const StyledCardBid = styled.div`
 		top: 280px;
 		width: 60%;
 	}
+
+	@media ${theme.media.mobile} {
+		margin: 0 90px 0 0;
+
+	}
 `
 
 const InfoColumn = styled.div`

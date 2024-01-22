@@ -16,7 +16,7 @@ export const Main = () => {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexContainer align={'center'} justify={'center'} wrap={'wrap'}>
+				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<MainColumnInfo>
 						<SectionMainTitle>
 							Discover and Collect The Best NFTs <span>Digital Art.</span>
@@ -105,6 +105,10 @@ const MainColumnDesign = styled.div`
 		margin-top: 48px;
 	}
 
+	@media ${theme.media.mobile} {
+		padding: 0 155px 0 155px;
+	}
+
 	@media screen and (max-width: 375px){
 		padding: 0 55px 0 70px;
 	}
@@ -158,7 +162,6 @@ const StyledStatisticsColumn = styled.div`
 			color: ${theme.colors.primary};
 			font-family: 'Lora';
 			font-size: calc( (100vw - 375px) / (1512 - 375) * (48 - 31) + 31px);
-
 		}
 	}
 

@@ -9,6 +9,10 @@ export const HeaderButton = styled.a `
 	background: ${theme.colors.secondary};
 	color: ${theme.colors.btnText};
 
+	:hover {
+		cursor: pointer;
+	}
+
 	@media ${theme.media.tablet} {
 		display: none;
 	}

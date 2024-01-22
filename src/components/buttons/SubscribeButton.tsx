@@ -20,4 +20,8 @@ const StyledSubscribeButton = styled.button`
 	position: absolute;
 	right: 4px;
 	top: 4px;
+
+	:hover {
+		cursor: pointer;
+	}
 `

@@ -95,7 +95,11 @@ const SocialList = styled.ul`
 	}
 `
 
-const SocialItem = styled.li``
+const SocialItem = styled.li`
+	:hover {
+		cursor: pointer;
+	}
+`
 
 const SocialIconLink = styled.a``
 

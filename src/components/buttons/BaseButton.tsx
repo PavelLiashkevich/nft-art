@@ -17,4 +17,8 @@ const StyledBaseButton = styled.a`
 	border-style: none;
 	background: ${theme.colors.secondary};
 	color: ${theme.colors.btnText};
+
+	:hover {
+		cursor: pointer;
+	}
 `

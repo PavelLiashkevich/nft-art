@@ -18,4 +18,8 @@ const StyledAdditionalButton = styled.a`
 	background-color: transparent;
 	border: none;
 	margin-left: 36px;
+
+	:hover {
+		cursor: pointer;
+	}
 `

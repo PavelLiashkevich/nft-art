@@ -13,4 +13,8 @@ export const SectionTitle = styled.h2<SectionTitlePropsType>`
 	span {
 		color: ${theme.colors.secondary};
 	}
+
+	@media screen and (max-width: 715px) {
+		max-width: 340px;
+	}
 `

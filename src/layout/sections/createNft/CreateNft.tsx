@@ -16,7 +16,7 @@ export const CreateNft = () => {
 	return (
 		<StyledCreateNft>
 			<Container>
-				<FlexContainer align={'center'} justify={'center'} wrap='wrap'>
+				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<MainColumnInfo>
 						<SectionTitle>
 							Create And Sell Your <span>Best NFTs</span>
@@ -25,7 +25,7 @@ export const CreateNft = () => {
 							Start exploring the world of digital art and NFTs today and take
 							control of your digital assets with confidence!
 						</StyledDescription>
-						<FlexContainer align='center'>
+						<FlexContainer align={'center'}>
 							<BaseButton text={'Create Now'} />
 							<AdditionalButton text={'Learn More'} />
 						</FlexContainer>

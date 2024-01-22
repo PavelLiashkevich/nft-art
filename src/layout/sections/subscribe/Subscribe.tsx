@@ -15,7 +15,7 @@ export const Subscribe = () => {
 	return (
 		<StyledSubscribe>
 			<Container>
-				<FlexContainer align='center' justify='center' wrap='wrap-reverse'>
+				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
 					<SubscribeColumn>
 						<PhotoOne src={subscribeImg1} />
 						<PhotoTwo src={subscribeImg2} />
@@ -29,7 +29,7 @@ export const Subscribe = () => {
 							routines on our blog which is updated weekly
 						</StyledDescription>
 						<FormContainer>
-							<StyledInput type='email' placeholder='Enter your e-mail' />
+							<StyledInput type='email' placeholder={'Enter your e-mail'} />
 							<SubscribeButton text='Subscribe' type={'submit'} />
 						</FormContainer>
 					</SubscribeColumnTwo>
