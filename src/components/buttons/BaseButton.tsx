@@ -18,8 +18,10 @@ const StyledBaseButton = styled.a`
 	border-style: none;
 	background: ${theme.colors.secondary};
 	color: ${theme.colors.btnText};
+	transition: 0.4s;
 
 	:hover {
 		cursor: pointer;
+		background-color: ${theme.colors.primary};
 	}
 `

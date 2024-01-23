@@ -40,12 +40,15 @@ const StyledMenu = styled.nav`
 
 const ListItem = styled.li`
 	padding-bottom: 1px;
+
 	:hover {
 		border-bottom: 1px solid ${theme.colors.secondary};
 	}
 `
 
 const Link = styled.a`
+	transition: 0.4s;
+	
 	:hover {
 		color: ${theme.colors.primary};
 	}

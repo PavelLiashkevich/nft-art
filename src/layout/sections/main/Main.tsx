@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Typewriter from 'typewriter-effect';
 
 import { BaseButton } from '../../../components/buttons/BaseButton'
 import { FlexContainer } from '../../../components/FlexContainer'
@@ -8,9 +9,9 @@ import { AdditionalButton } from '../../../components/buttons/AdditionalButton'
 import { StyledDescription } from '../../../components/Description'
 import { theme } from '../../../styles/Theme'
 import { Container } from '../../../components/Container'
+import { Icon } from '../../../components/icon/Icon'
 
 import photo from '../../../assets/images/others/mainImage.webp'
-import { Icon } from '../../../components/icon/Icon'
 
 export const Main = () => {
 	return (
@@ -19,7 +20,15 @@ export const Main = () => {
 				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<MainColumnInfo>
 						<SectionMainTitle>
-							Discover and Collect The Best NFTs <span>Digital Art.</span>
+						<p>The Best NFTs Digital Art</p>
+							Discover and Collect The Best NFTs 
+							<Typewriter
+								options={{
+								strings: ['Digital Art.'],
+								autoStart: true,
+								loop: true,
+								delay: 150,
+							}}/>	
 						</SectionMainTitle>
 						<StyledDescription>
 							Get started with the easiest and most secure platform to buy and
@@ -101,12 +110,17 @@ const MainColumnDesign = styled.div`
 
 const SectionMainTitle = styled.h1`
 	font-family: 'Lora';
+	color: ${theme.colors.primary};
 	font-weight: 500;
 	line-height: 120%;
 	margin-bottom: 20px;
 
 	span {
-		color: #d3f85a;
+		color: ${theme.colors.secondary};
+	}
+
+	p {
+		display: none;
 	}
 `
 
