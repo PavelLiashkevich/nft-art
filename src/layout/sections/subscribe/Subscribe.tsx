@@ -6,10 +6,10 @@ import { StyledDescription } from '../../../components/Description'
 import { SubscribeButton } from '../../../components/buttons/SubscribeButton'
 import { FlexContainer } from '../../../components/FlexContainer'
 import { Container } from '../../../components/Container'
+import { theme } from '../../../styles/Theme'
 
 import subscribeImg1 from '../../../assets/images/others/subscribeImg1.webp'
 import subscribeImg2 from '../../../assets/images/others/subscribeImg2.webp'
-import { theme } from '../../../styles/Theme'
 
 export const Subscribe = () => {
 	return (
@@ -44,14 +44,14 @@ export const Subscribe = () => {
 }
 
 const StyledSubscribe = styled.section`
-	padding: 92px 0 124px;
+	padding: 92px 0 184px;
 `
 
 const SubscribeColumn = styled.div`
 	max-width: 630px;
 	position: relative;
 
-	padding-right: 170px;
+	margin-right: 170px;
 
 	@media screen and (max-width: 1131px) {
 		order: 1;
@@ -59,11 +59,8 @@ const SubscribeColumn = styled.div`
 	}
 
 	@media ${theme.media.mobile} {
-		max-width: 343px;
-	}
-
-	@media screen and (max-width: 375px) {
-		padding-right: 10px;
+		margin-top: 100px;
+		margin-right: 130px;
 	}
 `
 
@@ -80,6 +77,16 @@ const PhotoWrapperOne = styled.div`
 		width: 320px;
 		height: 290px;
 	}
+
+	@media screen and (max-width: 430px) {
+		width: 260px;
+		height: 250px;
+	}
+  
+	@media screen and (max-width: 375px) {
+		width: 220px;
+    	height: 200px;
+	}
 `
 const PhotoOne = styled.img`
 	width: 100%;
@@ -91,23 +98,6 @@ const PhotoOne = styled.img`
 
 	transform: rotate(-11.188deg);
 	margin-left: 30px;
-
-	@media ${theme.media.tablet} {
-		width: 380px;
-		height: 360px;
-	}
-
-	@media ${theme.media.mobile} {
-		width: 320px;
-		height: 290px;
-	}
-
-	@media screen and (max-width: 375px) {
-		width: 220px;
-		height: 270px;
-
-		margin-left: 80px;
-	}
 `
 
 const PhotoWrapperTwo = styled.div`
@@ -115,22 +105,38 @@ const PhotoWrapperTwo = styled.div`
 	height: 348px;
 
 	position: absolute;
-	top: 110px;
-	left: 280px;
+	top: 170px;
+	left: 270px;
 
 	@media ${theme.media.tablet} {
-		width: 242px;
-		height: 300px;
+		width: 260px;
+		height: 310px;
 
 		right: 70px;
-		top: 160px;
+		top: 190px;
 	}
 
 	@media ${theme.media.mobile} {
-		width: 230px;
-		height: 240px;
+		width: 240px;
+		height: 270px;
 
-		left: 100px;
+		left: 200px;
+		top: 190px;
+	}
+
+	@media screen and (max-width: 430px) {
+		width: 200px;
+		height: 230px;
+
+		left: 170px;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 150px;
+    	height: 190px;
+
+		top: 160px;
+		left: 180px;
 	}
 `
 
@@ -143,16 +149,6 @@ const PhotoTwo = styled.img`
 	border-radius: 20px;
 
 	z-index: 999;
-
-	@media ${theme.media.tablet} {
-		width: 242px;
-		height: 300px;
-	}
-
-	@media ${theme.media.mobile} {
-		width: 230px;
-		height: 240px;
-	}
 `
 
 const SubscribeColumnTwo = styled.div`

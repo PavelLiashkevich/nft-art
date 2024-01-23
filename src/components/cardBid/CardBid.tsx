@@ -41,12 +41,13 @@ export const StyledCardBid = styled.div`
 	}
 	
 	@media ${theme.media.tablet} {
-		top: 280px;
+		top: 320px;
 		width: 90%;
 	}
 
 	@media ${theme.media.mobile} {
-		right: 10px;
+		top: 250px;
+		right: -30px;		
 	}
 `
 

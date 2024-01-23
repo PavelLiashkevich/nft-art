@@ -7,10 +7,10 @@ import { StyledDescription } from '../../../components/Description'
 import { BaseButton } from '../../../components/buttons/BaseButton'
 import { AdditionalButton } from '../../../components/buttons/AdditionalButton'
 import { Container } from '../../../components/Container'
+import { theme } from '../../../styles/Theme'
 
 import photoOne from '../../../assets/images/others/createNft1.webp'
 import photoTwo from '../../../assets/images/others/createNft2.webp'
-import { theme } from '../../../styles/Theme'
 
 export const CreateNft = () => {
 	return (
@@ -78,16 +78,25 @@ const PhotoWrapperOne = styled.div`
 		width: 330px;
 		height: 340px;
 
-		right: 100px;
+		right: 60px;
 		top: 180px;
 	}
 
 	@media ${theme.media.mobile} {
-		width: 230px;
-		height: 230px;
-
-		top: 175px;
+		width: 260px;
+		height: 250px;
 	}
+`
+
+const PhotoOne = styled.img`
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	object-position: 0 0;
+	border-radius: 24px;
+
+	z-index: 999;
 `
 
 const PhotoWrapperTwo = styled.div`
@@ -103,20 +112,9 @@ const PhotoWrapperTwo = styled.div`
 	}
 
 	@media ${theme.media.mobile} {
-		width: 230px;
-		height: 240px;
+		width: 250px;
+		height: 290px;
 	}
-`
-
-const PhotoOne = styled.img`
-	width: 100%;
-	height: 100%;
-
-	object-fit: cover;
-	object-position: 0 0;
-	border-radius: 24px;
-
-	z-index: 999;
 `
 
 const PhotoTwo = styled.img`

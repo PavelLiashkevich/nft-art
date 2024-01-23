@@ -180,7 +180,7 @@ const StyledSvg = styled.svg`
 	}
 
 	@media screen and (max-width: 375px) {
-		left: 40px;
+		left: -30px;
 	}
 `
 
@@ -203,6 +203,6 @@ const IconWrapper = styled.div`
 	}
 
 	@media screen and (max-width: 375px) {
-		left: 78px;
+		left: 8px;
 	}
 `

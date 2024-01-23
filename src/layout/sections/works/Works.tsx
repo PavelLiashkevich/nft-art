@@ -6,11 +6,11 @@ import { BaseButton } from '../../../components/buttons/BaseButton'
 import { Card } from './card/Card'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { Container } from '../../../components/Container'
+import { theme } from '../../../styles/Theme'
 
 import ImageCard1 from '../../../assets/images/others/image1.webp'
 import ImageCard2 from '../../../assets/images/others/image2.webp'
 import ImageCard3 from '../../../assets/images/others/image3.webp'
-import { theme } from '../../../styles/Theme'
 
 export const Works = () => {
 	return (
@@ -28,10 +28,10 @@ export const Works = () => {
 				</FlexContainer>
 				<FlexContainer justify='center'>
 					<Wrap>
-					<Card src={ImageCard1} title={'Cyberpunk Cocomo'} price={490} />
-					<Card src={ImageCard2} title={'Charge, Qi tiao yu'} price={590} />
-					<Card src={ImageCard3} title={'Surgeon, Josh Rife'} price={390} />
-				</Wrap>
+						<Card src={ImageCard1} title={'Cyberpunk Cocomo'} price={490} />
+						<Card src={ImageCard2} title={'Charge, Qi tiao yu'} price={590} />
+						<Card src={ImageCard3} title={'Surgeon, Josh Rife'} price={390} />
+					</Wrap>
 				</FlexContainer>
 				
 			</Container>
@@ -42,17 +42,20 @@ export const Works = () => {
 const StyledWorks = styled.section``
 
 const Wrap = styled.div`
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
-	grid-auto-rows: 498px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 20px;
 
-	@media screen and (max-width: 1290px){
+	@media screen and (max-width: 1290px) {
 		justify-items: center;
 	}
 
 	@media ${theme.media.mobile} {
 		gap: 16px;
+	}
+
+	@media screen and (max-width: 1290px) {
+		width: 116%;
 	}
 `

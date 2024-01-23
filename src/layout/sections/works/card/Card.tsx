@@ -15,7 +15,9 @@ type CardPropsType = {
 export const Card = (props: CardPropsType) => {
 	return (
 		<StyledCard>
-			<Image src={props.src}></Image>
+			<PhotoWrapper>
+				<Image src={props.src}></Image>
+			</PhotoWrapper>
 			<FlexContainer justify='space-between' marginBottom='16px'>
 				<Title>{props.title}</Title>
 				<Price>
@@ -45,25 +47,30 @@ const StyledCard = styled.div`
 	border-top: 1px solid ${theme.colors.secondary};
 	background: #131e3a;
 	box-shadow: 0px 9px 50px 0px rgba(23, 36, 65, 0.04);
-	max-width: 410px;
-	width: 100%;
 	color: ${theme.colors.secondary};
 
-	@media ${theme.media.mobile} {
-		max-width: 343px;
+	@media screen and (max-width: 375px) {
+		width: 343px;
+		padding: 16px;
+	}
+`
+
+const PhotoWrapper = styled.div `
+	width: 370px;
+	height: 340px;
+	margin-bottom: 24px;
+
+	@media screen and (max-width: 410px) {
+		width: 310px;
 	}
 `
 
 const Image = styled.img`
-	width: 370px;
-	height: 340px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	object-position: 0 0;
 	border-radius: 16px;
-	margin-bottom: 24px;
-	@media ${theme.media.mobile} {
-		width: 311px;
-	}
 `
 
 const Title = styled.h4`
