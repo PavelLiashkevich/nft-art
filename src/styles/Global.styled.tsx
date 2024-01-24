@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { theme } from './Theme'
+import bg from '../assets/images/others/bg.png'
 
 export const GlobalStyle = createGlobalStyle`
 *, 
@@ -17,8 +18,23 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: ${theme.colors.bg};
+	background-color: #02040e;
 	color: ${theme.colors.primary};
+	position: relative;
+
+	::before {
+		content: '';
+		background: url(${bg});
+		object-fit: cover;
+		mix-blend-mode: overlay;
+		width: 100%;
+		height: 100%;
+		background-size: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -9999;
+	}
 }
 
 h1 {
