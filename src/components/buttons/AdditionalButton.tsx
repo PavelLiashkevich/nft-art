@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { theme } from '../../styles/Theme'
 
 type AdditionalButtonPropsType = {
 	text: string
@@ -18,8 +19,10 @@ const StyledAdditionalButton = styled.a`
 	background-color: transparent;
 	border: none;
 	margin-left: 36px;
+	transition: 0.4s;
 
 	:hover {
 		cursor: pointer;
+		color: ${theme.colors.secondary};
 	}
 `

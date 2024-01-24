@@ -11,6 +11,11 @@ export const GlobalStyle = createGlobalStyle`
 	box-sizing: border-box;
 }
 
+*::selection {
+	background-color: ${theme.colors.secondary};
+	color: ${theme.colors.selection};
+}
+
 body {
 	margin: 0;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
