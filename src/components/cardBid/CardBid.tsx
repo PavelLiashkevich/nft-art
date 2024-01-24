@@ -26,11 +26,11 @@ export const CardBid = () => {
 export const StyledCardBid = styled.div`
 	padding: 20px;
 	border-radius: 16px;
-	border-top: 1px solid #d3f85a;
+	border-top: 1px solid ${theme.colors.secondary};
 	background: #131e3a;
 	box-shadow: 0px 9px 50px 0px rgba(23, 36, 65, 0.04);
 	max-width: 304px;
-	color: #d3f85a;
+	color: ${theme.colors.secondary};
 	position: absolute;
 	width: 100%;
 	right: -50px;

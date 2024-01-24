@@ -24,7 +24,8 @@ const StyledText = styled.div`
 	font-family: 'Loro';
 	font-size: 32px;
 	margin-top: 10px;
+
 	span {
-		color: #d3f85a;
+		color: ${theme.colors.secondary};	
 	}
 `
