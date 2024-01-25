@@ -34,7 +34,6 @@ export const Card = (props: CardPropsType) => {
 						<Time>03:24:56</Time>
 					</FlexContainer>
 				</FlexContainer>
-
 				<CardBtn />
 			</FlexContainer>
 		</StyledCard>
@@ -43,6 +42,7 @@ export const Card = (props: CardPropsType) => {
 
 const StyledCard = styled.div`
 	padding: 20px;
+	margin: 0 16px;
 	border-radius: 16px;
 	border-top: 1px solid ${theme.colors.secondary};
 	background: #131e3a;
@@ -50,18 +50,16 @@ const StyledCard = styled.div`
 	color: ${theme.colors.secondary};
 
 	@media screen and (max-width: 375px) {
-		width: 343px;
 		padding: 16px;
 	}
 `
 
 const PhotoWrapper = styled.div `
-	width: 370px;
-	height: 340px;
+	height: 370px;
 	margin-bottom: 24px;
 
-	@media screen and (max-width: 410px) {
-		width: 310px;
+	@media screen and (max-width: 375px) {
+		height: 270px;
 	}
 `
 
@@ -69,7 +67,7 @@ const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: 0 0;
+	object-position: 0 10%;
 	border-radius: 16px;
 `
 

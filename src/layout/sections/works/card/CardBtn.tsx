@@ -20,4 +20,12 @@ const StyledCardButton = styled.a`
 		color: ${theme.colors.btnText};
 		font-weight: bold;
 	}
+
+	@media ${theme.media.tablet} {
+		padding: 12px 32px;
+	}
+
+	@media ${theme.media.mobile} {
+		padding: 12px 30px;
+	}
 `
