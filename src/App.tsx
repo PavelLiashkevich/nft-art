@@ -1,3 +1,4 @@
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn'
 import { Footer } from './layout/footer/Footer'
 import { Header } from './layout/header/Header'
 import { CreateNft } from './layout/sections/createNft/CreateNft'
@@ -14,6 +15,7 @@ function App() {
 			<CreateNft />
 			<Subscribe />
 			<Footer />
+			<GoTopBtn />
 		</div>
 	)
 }

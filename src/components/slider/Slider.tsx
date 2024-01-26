@@ -4,7 +4,6 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import '../../styles/slider.css'
 
 import { Card } from '../../layout/sections/works/card/Card';
-import { Icon } from '../icon/Icon'
 
 import ImageCard1 from '../../assets/images/arts/image1.webp'
 import ImageCard2 from '../../assets/images/arts/image2.webp'
@@ -33,6 +32,7 @@ const items = [
 
 export const Slider = () => (
     <AliceCarousel
+        mouseTracking
         items={items}
         responsive={responsive}
         keyboardNavigation={false}
