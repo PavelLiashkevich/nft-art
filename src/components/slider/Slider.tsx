@@ -13,7 +13,6 @@ import ImageCard5 from '../../assets/images/arts/image5.webp'
 import ImageCard6 from '../../assets/images/arts/image6.webp'
 import ImageCard7 from '../../assets/images/arts/image7.webp'
 
-
 const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -27,7 +26,7 @@ const items = [
 	<Card src={ImageCard7} title={'Omoki X'} price={370} />,
     <Card src={ImageCard2} title={'Sukoversum '} price={540} />,
 	<Card src={ImageCard3} title={'VaynerX'} price={410} />,
-	<Card src={ImageCard5} title={'Josh Rife'} price={430} />,
+	<Card src={ImageCard5} title={'Josh Rife'} price={430} />,  
 ];
 
 export const Slider = () => (

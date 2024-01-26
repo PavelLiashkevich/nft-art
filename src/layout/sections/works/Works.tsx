@@ -6,6 +6,7 @@ import { BaseButton } from '../../../components/buttons/BaseButton'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { Container } from '../../../components/Container'
 import { Slider } from '../../../components/slider/Slider'
+import { Fade } from "react-awesome-reveal";
 
 export const Works = () => {
 	return (
@@ -21,9 +22,11 @@ export const Works = () => {
 					</SectionTitle>
 					<BaseButton text={'See All'} />
 				</FlexContainer>
-				<FlexContainer justify='center'>
-					<Slider/>
-				</FlexContainer>
+				<Fade>
+					<FlexContainer justify='center'>
+						<Slider/>
+					</FlexContainer>
+				</Fade>
 			</Container>
 		</StyledWorks>
 	)
