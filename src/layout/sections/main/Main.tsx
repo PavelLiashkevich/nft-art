@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
 
 import { BaseButton } from '../../../components/buttons/BaseButton'
 import { FlexContainer } from '../../../components/FlexContainer'
@@ -20,15 +20,16 @@ export const Main = () => {
 				<FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'}>
 					<MainColumnInfo>
 						<SectionMainTitle>
-						<p>The Best NFTs Digital Art</p>
-							Discover and Collect The Best NFTs 
+							<p>The Best NFTs Digital Art</p>
+							Discover and Collect The Best NFTs
 							<Typewriter
 								options={{
-								strings: ['Digital Art.'],
-								autoStart: true,
-								loop: true,
-								delay: 150,
-							}}/>	
+									strings: ['Digital Art.'],
+									autoStart: true,
+									loop: true,
+									delay: 150,
+								}}
+							/>
 						</SectionMainTitle>
 						<StyledDescription>
 							Get started with the easiest and most secure platform to buy and
