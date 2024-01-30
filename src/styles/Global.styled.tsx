@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { theme } from './Theme'
+
 import bg from '../assets/images/others/bg.png'
 
 export const GlobalStyle = createGlobalStyle`
